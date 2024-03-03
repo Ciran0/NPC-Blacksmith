@@ -73,21 +73,19 @@ namespace marioRPGMinigame
             // TODO: Add your initialization logic here
 
             state = "starting";
-
-            base.Initialize();
-        }
-
-        protected override void LoadContent()
-        {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             _device = _graphics.GraphicsDevice;
             drawManager = new DrawManager(GraphicsDevice);
             screenWidth = _device.PresentationParameters.BackBufferWidth;
             screenHeight = _device.PresentationParameters.BackBufferHeight;
-            assetsManager = new AssetsManager(Content);
 
+            base.Initialize();
+        }
             
+        protected override void LoadContent()
+        {
 
+            assetsManager = new AssetsManager(Content);
             changeState("mainMenu");
 
         }
