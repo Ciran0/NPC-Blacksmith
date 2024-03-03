@@ -196,14 +196,5 @@ namespace marioRPGMinigame
             }
             stateChanged = false;
         }
-
-        public static void Remove(Enemy enemy)
-        {
-            enemies.Remove(enemy);
-        }
-        public static void Remove(Projectile enemy)
-        {
-            projectiles.Remove(enemy);
-        }
     }
 }
