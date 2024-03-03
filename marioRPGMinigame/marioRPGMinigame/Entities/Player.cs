@@ -17,15 +17,9 @@ namespace marioRPGMinigame.Entities
     public class Player: Entity
     {
 
-        public RotatedRectangle hitbox;
-        public RotatedRectangle drawbox;
+        
         private Texture2D _playerSprite;
-        private float scale;
-        public float angle;
-        public bool active;
-        public bool visible;
         public bool pressed = false;
-        public Vector2 velocity;
         public bool isWalking=false;   
         public bool isRightKeyPressed=false;   
         public bool isLeftKeyPressed = false;

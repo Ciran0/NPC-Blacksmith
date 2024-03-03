@@ -15,14 +15,8 @@ namespace marioRPGMinigame.Entities
     public class Enemy: Entity
     {
 
-        public RotatedRectangle hitbox;
+        
         private Texture2D _enemySprite;
-        private float scale;
-        public float angle;
-        public bool active;
-        public bool visible;
-        public bool dead=false;
-        public Vector2 velocity;
         public float maxSpeedY = 40;
 
 
@@ -75,9 +69,6 @@ namespace marioRPGMinigame.Entities
 
             if (dead)
             {
-                
-                
-                
                 this.Remove();
             }
         }
