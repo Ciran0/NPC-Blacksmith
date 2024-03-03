@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using marioRPGMinigame.Projectiles;
 using System;
-using marioRPGMinigame.Essentials;
 
 namespace marioRPGMinigame
 {
@@ -81,10 +80,10 @@ namespace marioRPGMinigame
 
             base.Initialize();
         }
-            
+
         protected override void LoadContent()
         {
-
+            
             assetsManager = new AssetsManager(Content);
             changeState("mainMenu");
 

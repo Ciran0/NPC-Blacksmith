@@ -13,7 +13,6 @@ namespace marioRPGMinigame.Essentials
     public class UIItem_text: UIItem
     {
         private Vector2 topLeft;
-        public RotatedRectangle body;
         public string text;
 
 
