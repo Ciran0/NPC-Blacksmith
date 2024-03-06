@@ -42,17 +42,20 @@ namespace marioRPGMinigame.Entities
                 Game1.player.visible = false;
             }
 
-            if (this.hitbox.bottomLeft.Y + Game1.gravity >= Game1.screenHeight && velocity.Y > 0)
+            if (this.hitbox.bottomLeft.Y > Game1.screenHeight && velocity.Y > 0)
             {
+                move(0, -(hitbox.bottomLeft.Y - Game1.screenHeight));
                 velocity.Y -= 1;
                 velocity.Y *= -1;
             }
             if (this.hitbox.bottomRight.X > Game1.screenWidth)
             {
+                move(-(this.hitbox.bottomRight.X - Game1.screenWidth),0);
                 velocity.X *= -1;
             }
             if (this.hitbox.bottomLeft.X <= 0)
             {
+                move(-this.hitbox.bottomLeft.X, 0);
                 velocity.X *= -1;
             }
 
